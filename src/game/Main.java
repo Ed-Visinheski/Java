@@ -23,6 +23,7 @@ public class Main {
         frame.setVisible(true);
         //JFrame debugView = new DebugViewer(world, 500, 500);
         world.start();
+        //g
     }
 
     public static void main(String[] args) {

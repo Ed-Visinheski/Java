@@ -8,5 +8,6 @@ public class Player extends DynamicBody {
     public Player(World w) {
         super(w, playerShape);
         this.addImage(image);
+        //g
     }
 }

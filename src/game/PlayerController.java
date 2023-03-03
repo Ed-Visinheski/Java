@@ -23,6 +23,7 @@ public class PlayerController implements KeyListener  {
         } else if (code == KeyEvent.VK_2) {
             player.startWalking(5);
         }*/
+        //g
     }
 
     @Override

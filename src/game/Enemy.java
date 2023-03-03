@@ -8,4 +8,4 @@ public class Enemy extends DynamicBody {
         super(world, playerShape);
         this.addImage(image);
     }
-}
+}//g
