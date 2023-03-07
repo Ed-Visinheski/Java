@@ -1,17 +1,21 @@
 package game;
 import city.cs.engine.*;
-
 import javax.management.ValueExp;
+import javax.swing.event.ChangeListener;
 import javax.swing.JFrame;
-import org.jbox2d.common.Vec2;
 
 public class Main {
+    private MainWorld world;
+    private MainView view;
     public Main() {
-        MainWorld world = new MainWorld();
-        MainView view = new MainView(world,500,500);
+        world = new MainWorld();
+
+        view = new MainView(world,600,600);
 
         PlayerController controller = new PlayerController(world.getPlayer());
         view.addKeyListener(controller);
+        view.addMouseListener(new Focus(view));
+        world.addStepListener(new Tracker(view, world.getPlayer()));
 
         view.setGridResolution(1.0F);
         JFrame frame = new JFrame("Tower of God");
@@ -21,12 +25,15 @@ public class Main {
         frame.setResizable(false);
         frame.pack();
         frame.setVisible(true);
-        //JFrame debugView = new DebugViewer(world, 500, 500);
+        JFrame debugView = new DebugViewer(world, 600, 600);
         world.start();
-        //g
     }
 
     public static void main(String[] args) {
         new Main();
+    }
+
+    public static void update() {
+
     }
 }

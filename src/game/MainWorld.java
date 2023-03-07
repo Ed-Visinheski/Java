@@ -1,24 +1,20 @@
 package game;
-
-import city.cs.engine.BoxShape;
-import city.cs.engine.Shape;
-import city.cs.engine.StaticBody;
-import city.cs.engine.World;
+import city.cs.engine.*;
 import org.jbox2d.common.Vec2;
-
 public class MainWorld extends World {
-    private Player player;
+    private  Player player;
     public MainWorld(){
-        super();
-        Shape shape = new BoxShape(12.5F, 1F);
+        Shape shape = new BoxShape(12.5f, 1f);
         StaticBody ground = new StaticBody(this, shape);
-        ground.setPosition(new Vec2(0.0F, -12F));
+        ground.setPosition(new Vec2(0.0f, -12f));
 
-        Player player = new Player(this);
-        player.setPosition(new Vec2(0,0));
+        Shape platform1Shape = new BoxShape(3, 0.5f);
+        StaticBody platform1 = new StaticBody(this, platform1Shape);
+        platform1.setPosition(new Vec2(-8, -4f));
 
-        Enemy enemy = new Enemy(this);
-        enemy.setPosition(new Vec2(3,3));
+
+        player = new Player(this);
+        player.setPosition(new Vec2(0,-8));
 
     }
     public Player getPlayer(){
