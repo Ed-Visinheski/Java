@@ -1,8 +1,8 @@
 package game;
 import city.cs.engine.*;
 import javax.management.ValueExp;
+import javax.swing.*;
 import javax.swing.event.ChangeListener;
-import javax.swing.JFrame;
 
 public class Main {
     private MainWorld world;

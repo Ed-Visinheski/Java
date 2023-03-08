@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Creation of MainWorld and MainView class to separate from original Main class. Player controller and enemy classes also created">
+    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Classes created: Focus and Tracker to enable the player to move with keyboard inputs and so that the world view is tracked by the player's y-coordinate position in the world (implementation of step listeners)&#10;Other methods have been modified either to encapsulate them or to enable the keyboard inputs. Furthermore, polygonEditor has been changed to fit correctly the new player BodyImage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/game/Enemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Enemy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/game/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/MainView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/game/MainWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/MainWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/game/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/PlayerController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Enemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/MainWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/MainWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/PlayerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +57,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="game" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src/game" />
@@ -72,7 +79,7 @@
       <workItem from="1677850955754" duration="639000" />
       <workItem from="1677855834891" duration="152000" />
       <workItem from="1677856113796" duration="1841000" />
-      <workItem from="1678200386021" duration="15054000" />
+      <workItem from="1678200386021" duration="28108000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up">
       <created>1677850970181</created>
@@ -123,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677857342540</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Classes created: Focus and Tracker to enable the player to move with keyboard inputs and so that the world view is tracked by the player's y-coordinate position in the world (implementation of step listeners)&#10;Other methods have been modified either to encapsulate them or to enable the keyboard inputs. Furthermore, polygonEditor has been changed to fit correctly the new player BodyImage">
+      <created>1678218417291</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678218417291</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +159,8 @@
     <MESSAGE value="Branch Test" />
     <MESSAGE value="Added Main world and player class" />
     <MESSAGE value="Creation of MainWorld and MainView class to separate from original Main class. Player controller and enemy classes also created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creation of MainWorld and MainView class to separate from original Main class. Player controller and enemy classes also created" />
+    <MESSAGE value="Classes created: Focus and Tracker to enable the player to move with keyboard inputs and so that the world view is tracked by the player's y-coordinate position in the world.&#10;Other methods have been modified either to encapsulate them or to enable the keyboard inputs. Furthermore, polygonEditor has been changed to fit correctly the new player BodyImage" />
+    <MESSAGE value="Classes created: Focus and Tracker to enable the player to move with keyboard inputs and so that the world view is tracked by the player's y-coordinate position in the world (implementation of step listeners)&#10;Other methods have been modified either to encapsulate them or to enable the keyboard inputs. Furthermore, polygonEditor has been changed to fit correctly the new player BodyImage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Classes created: Focus and Tracker to enable the player to move with keyboard inputs and so that the world view is tracked by the player's y-coordinate position in the world (implementation of step listeners)&#10;Other methods have been modified either to encapsulate them or to enable the keyboard inputs. Furthermore, polygonEditor has been changed to fit correctly the new player BodyImage" />
   </component>
 </project>
