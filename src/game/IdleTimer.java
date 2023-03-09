@@ -5,7 +5,9 @@ import java.awt.event.ActionListener;
 
 public class IdleTimer implements ActionListener {
     private Player player;
-    int counter = 0;
+    int idleCounter = 0;
+    int jumpCounter = 0;
+    int walkCounter = 0;
      private MainWorld world;
 
 
@@ -16,10 +18,30 @@ public class IdleTimer implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(counter == 20){counter = 0;}
-        player.removeAllImages();
-        player.addImage(player.updateImage(counter));
-        counter++;
+        if(idleCounter == 20){idleCounter = 0;}
+        if(walkCounter == 20){idleCounter = 0;}
+        if(jumpCounter == 8){jumpCounter = 0;}
+        if(player.jump){
+            walkCounter = 0;
+            idleCounter = 0;
+            player.removeAllImages();
+            player.addImage(player.updateImage(jumpCounter));
+            jumpCounter++;
+        }
+        else {
+            if (player.walk) {
+                jumpCounter = 0;
+                idleCounter = 0;
+                player.removeAllImages();
+                player.addImage(player.updateImage(walkCounter));
+                walkCounter++;
+            } else if (!player.walk) {
+                walkCounter = 0;
+                player.removeAllImages();
+                player.addImage(player.updateImage(idleCounter));
+                idleCounter++;
+            }
+        }
     }
 
 

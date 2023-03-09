@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Fixed issue with player animation constantly adding new image to body without deleting previous image causing the game to consume large amounts of RAM.&#10;GreenSlimeTimer created to enable animation for the greenSlime enemy and added a timer to the Green Slime class so that each enemy has its own independent animation.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Different animations for player idle, walk and jump.">
       <change beforePath="$PROJECT_DIR$/out/production/Java/game/IdleTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/IdleTimer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java/game/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/MainView.class" afterDir="false" />
@@ -81,7 +80,7 @@
       <workItem from="1677855834891" duration="152000" />
       <workItem from="1677856113796" duration="1841000" />
       <workItem from="1678200386021" duration="28479000" />
-      <workItem from="1678319504091" duration="16701000" />
+      <workItem from="1678319504091" duration="17105000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up">
       <created>1677850970181</created>
@@ -153,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678334953174</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Different animations for player idle, walk and jump.">
+      <created>1678338624014</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678338624014</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +185,7 @@
     <MESSAGE value="Classes created: Focus and Tracker to enable the player to move with keyboard inputs and so that the world view is tracked by the player's y-coordinate position in the world (implementation of step listeners)&#10;Other methods have been modified either to encapsulate them or to enable the keyboard inputs. Furthermore, polygonEditor has been changed to fit correctly the new player BodyImage" />
     <MESSAGE value="IdleTimer class created to add animation to the player class every 100ms&#10;Changed Enemy Class to abstract class&#10;GreenSlime class created as an extention of Enemy" />
     <MESSAGE value="Fixed issue with player animation constantly adding new image to body without deleting previous image causing the game to consume large amounts of RAM.&#10;GreenSlimeTimer created to enable animation for the greenSlime enemy and added a timer to the Green Slime class so that each enemy has its own independent animation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with player animation constantly adding new image to body without deleting previous image causing the game to consume large amounts of RAM.&#10;GreenSlimeTimer created to enable animation for the greenSlime enemy and added a timer to the Green Slime class so that each enemy has its own independent animation." />
+    <MESSAGE value="Different animations for player idle, walk and jump." />
+    <option name="LAST_COMMIT_MESSAGE" value="Different animations for player idle, walk and jump." />
   </component>
 </project>

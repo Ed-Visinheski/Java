@@ -28,7 +28,7 @@ public class MainWorld extends World {
 
         GreenSlime greenSlime = new GreenSlime(this);
         greenSlime.setPosition(new Vec2(3,4));
-        Timer timer = new Timer(100,new IdleTimer(this,player));
+        timer = new Timer(100,new IdleTimer(this,player));
         timer.start();
 
         GreenSlime greenSlime1 = new GreenSlime(this);
