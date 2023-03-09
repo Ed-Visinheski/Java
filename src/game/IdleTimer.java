@@ -16,10 +16,11 @@ public class IdleTimer implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if(counter == 3){counter = 0;}
+        if(counter == 20){counter = 0;}
+        player.removeAllImages();
         player.addImage(player.updateImage(counter));
-        System.out.println(counter);
         counter++;
-
     }
+
+
 }
