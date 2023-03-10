@@ -13,8 +13,6 @@ public class GreenSlime extends Enemy {
 
     private static final Shape greenSlimeShape = new PolygonShape(
             -1f,-0.8f, -1f,0.3f, -0.5f,0.75f, 0f,0.82f, 0.5f,0.75f, 1f,0.3f, 1f,-0.82f);
-    //private static final BodyImage image = new BodyImage("data/Slime.png", 2);
-
 
     public void GreenSlimeIdle(){
         greenSlimeIdle = new String[30];
@@ -31,7 +29,7 @@ public class GreenSlime extends Enemy {
     public GreenSlime(MainWorld world) {
         super(world, greenSlimeShape);
         GreenSlimeIdle();
-        Timer timer = new Timer(100,new GreenSlimeTimer(world,this));
+        Timer timer = new Timer(100,new GreenSlimeTimer(this));
         timer.start();
     }
 

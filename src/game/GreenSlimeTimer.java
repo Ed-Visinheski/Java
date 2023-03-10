@@ -5,11 +5,9 @@ import java.awt.event.ActionListener;
 
 public class GreenSlimeTimer implements ActionListener {
 
-    private MainWorld world;
     private GreenSlime greenSlime;
     private int slimeCounter = 0;
-    public GreenSlimeTimer(MainWorld world, GreenSlime greenSlime) {
-        this.world = world;
+    public GreenSlimeTimer(GreenSlime greenSlime) {
         this.greenSlime = greenSlime;
     }
     @Override
