@@ -26,7 +26,6 @@ public class Lizard extends Enemy implements StepListener {
 
     public Lizard(MainWorld world) {
         super(world, orangeSlimeShape);
-//        OrangeSlimeIdle();
         this.addImage(new BodyImage("data/lizard_run.gif",2f));
         world.addStepListener(this);
         startWalking(v);

@@ -61,6 +61,9 @@ public class PlayerController implements KeyListener {
         else if (code == KeyEvent.VK_UP){
             player.jump(40);
         }
+        else if (code == KeyEvent.VK_R){
+            player.setPosition(player.GetCheckpoint());
+        }
     }
 
     @Override

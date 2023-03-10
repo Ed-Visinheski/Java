@@ -45,17 +45,27 @@ public class MainWorld extends World {
         player = new Player(this);
         player.setPosition(new Vec2(0,-8));
 
-        greenSlime = new GreenSlime(this);
-        greenSlime.setPosition(new Vec2(3,4));
+//        greenSlime = new GreenSlime(this);
+//        greenSlime.setPosition(new Vec2(3,4));
 
         Lizard lizard = new Lizard(this);
         lizard.setPosition(new Vec2(5,27));
 
-        GreenSlime greenSlime1 = new GreenSlime(this);
-        greenSlime1.setPosition(new Vec2(-3,4));
+//        GreenSlime greenSlime1 = new GreenSlime(this);
+//        greenSlime1.setPosition(new Vec2(-3,4));
 
-        EnemyDamage edl = new EnemyDamage(player);
-        player.addCollisionListener(edl);
+        Points coin1 = new Points(this);
+        coin1.setPosition(new Vec2(0,0));
+
+        HealthCollectible health1 = new HealthCollectible(this,3,player);
+        health1.setPosition(new Vec2(0,0));
+
+        Checkpoint checkpoint = new Checkpoint(this);
+        checkpoint.setPosition(new Vec2(10,27));
+
+        PlayerCollision pc = new PlayerCollision(player);
+        player.addCollisionListener(pc);
+
     }
     public Player getPlayer(){
         return player;

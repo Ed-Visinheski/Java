@@ -10,6 +10,7 @@ public class Player extends Walker {
     int health = 3;
     private String imageName, previousFrame;
     public boolean flipImage = false;
+    private Vec2 checkpoint = new Vec2(0,-8);
     private static final Shape playerShape = new PolygonShape(-0.5f,-0.9f,-0.5f,0.9f,0.5f,0.9f, 0.5f,-0.9f);
 
     public Player(World world) {
@@ -31,5 +32,11 @@ public class Player extends Walker {
             else {this.addImage(new BodyImage("data/player" + imageName + ".gif", 2f));}
         }
         previousFrame = imageName;
+    }
+    public void SetCheckpoint(Vec2 checkpoint){
+        this.checkpoint = checkpoint;
+    }
+    public Vec2 GetCheckpoint(){
+        return checkpoint;
     }
 }
