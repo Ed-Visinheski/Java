@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Different animations for player idle, walk and jump.">
+    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Removal of png's for animation and replacement with gifs.&#10;Change of tileset for more organic game feel and development of moving enemies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/GreenSlime.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/GreenSlime.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/GreenSlimeTimer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/GreenSlimeTimer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/IdleTimer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/MainWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/MainWorld.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/PlayerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GreenSlime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GreenSlime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GreenSlimeTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GreenSlimeTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/IdleTimer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java/game/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/MainView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/MainWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/MainWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/OrangeSlime.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +75,8 @@
       <workItem from="1678200386021" duration="28479000" />
       <workItem from="1678319504091" duration="17212000" />
       <workItem from="1678376017327" duration="9292000" />
-      <workItem from="1678410037479" duration="15279000" />
+      <workItem from="1678410037479" duration="15370000" />
+      <workItem from="1678461574323" duration="7029000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up">
       <created>1677850970181</created>
@@ -173,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678338666568</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Removal of png's for animation and replacement with gifs.&#10;Change of tileset for more organic game feel and development of moving enemies">
+      <created>1678427768143</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678427768143</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +196,8 @@
     <MESSAGE value="IdleTimer class created to add animation to the player class every 100ms&#10;Changed Enemy Class to abstract class&#10;GreenSlime class created as an extention of Enemy" />
     <MESSAGE value="Fixed issue with player animation constantly adding new image to body without deleting previous image causing the game to consume large amounts of RAM.&#10;GreenSlimeTimer created to enable animation for the greenSlime enemy and added a timer to the Green Slime class so that each enemy has its own independent animation." />
     <MESSAGE value="Different animations for player idle, walk and jump." />
-    <option name="LAST_COMMIT_MESSAGE" value="Different animations for player idle, walk and jump." />
+    <MESSAGE value="Removal of png's for animation and replacement with gifs.&#10;Change of tileset for more organic game feel and development of moving enenmies" />
+    <MESSAGE value="Removal of png's for animation and replacement with gifs.&#10;Change of tileset for more organic game feel and development of moving enemies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removal of png's for animation and replacement with gifs.&#10;Change of tileset for more organic game feel and development of moving enemies" />
   </component>
 </project>

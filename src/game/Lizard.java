@@ -5,7 +5,7 @@ import org.jbox2d.common.Vec2;
 
 import javax.swing.*;
 
-public class OrangeSlime extends Enemy implements StepListener {
+public class Lizard extends Enemy implements StepListener {
 
     private int health;
     private int damage;
@@ -24,7 +24,7 @@ public class OrangeSlime extends Enemy implements StepListener {
     private boolean flipImage = false;
 
 
-    public OrangeSlime(MainWorld world) {
+    public Lizard(MainWorld world) {
         super(world, orangeSlimeShape);
 //        OrangeSlimeIdle();
         this.addImage(new BodyImage("data/lizard_run.gif",2f));
