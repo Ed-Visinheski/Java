@@ -39,4 +39,7 @@ public class Player extends Walker {
     public Vec2 GetCheckpoint(){
         return checkpoint;
     }
+    public Vec2 GetPos(){
+        return this.getPosition();
+    }
 }

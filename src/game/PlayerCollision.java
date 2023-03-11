@@ -4,9 +4,11 @@ import city.cs.engine.CollisionListener;
 
 public class PlayerCollision implements CollisionListener {
     private Player player;
+    private HealthBar healthBar;
 
-    public PlayerCollision(Player player){
+    public PlayerCollision(Player player, HealthBar healthBar){
         this.player = player;
+        this.healthBar = healthBar;
     }
 
     @Override
@@ -17,12 +19,13 @@ public class PlayerCollision implements CollisionListener {
             }
             else{
                 player.health--;
+                healthBar.SpriteChange();
                 collisionEvent.getOtherBody().destroy();
             }
-            System.out.print(player.health);
         }
         if(collisionEvent.getOtherBody() instanceof Collectibles){
             ((Collectibles) collisionEvent.getOtherBody()).CollisionResponce();
+            if (player.health>3){player.health=3;}
             collisionEvent.getOtherBody().destroy();
         }
         if(collisionEvent.getOtherBody() instanceof Checkpoint){

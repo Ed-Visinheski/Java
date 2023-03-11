@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Added moving platforms">
+    <list default="true" id="57afeb29-02b8-4116-9363-9edc0dd6477f" name="Changes" comment="Added checkpoints and Collectibles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/EnemyDamage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java/game/MainWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/MainWorld.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/OrangeSlime.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Java/game/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java/game/PlayerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java/game/PlayerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/EnemyDamage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Lizard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Lizard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/MainWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/MainWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/PlayerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/PlayerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/PlayerCollision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/PlayerCollision.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Signs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Signs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +79,7 @@
       <workItem from="1678319504091" duration="17212000" />
       <workItem from="1678376017327" duration="9292000" />
       <workItem from="1678410037479" duration="15370000" />
-      <workItem from="1678461574323" duration="15474000" />
+      <workItem from="1678461574323" duration="22110000" />
     </task>
     <task id="LOCAL-00001" summary="Set Up">
       <created>1677850970181</created>
@@ -185,7 +179,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678471349372</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added checkpoints and Collectibles">
+      <created>1678482004750</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678482004750</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added checkpoints and Collectibles">
+      <created>1678482020446</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1678482020446</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +223,7 @@
     <MESSAGE value="Removal of png's for animation and replacement with gifs.&#10;Change of tileset for more organic game feel and development of moving enenmies" />
     <MESSAGE value="Removal of png's for animation and replacement with gifs.&#10;Change of tileset for more organic game feel and development of moving enemies" />
     <MESSAGE value="Added moving platforms" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added moving platforms" />
+    <MESSAGE value="Added checkpoints and Collectibles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added checkpoints and Collectibles" />
   </component>
 </project>
