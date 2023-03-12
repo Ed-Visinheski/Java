@@ -17,7 +17,7 @@ public class Main {
         view.addMouseListener(new Focus(view));
         world.addStepListener(new Tracker(view, world.getPlayer()));
 
-        //view.setGridResolution(1.0F);
+        view.setGridResolution(1.0F);
         JFrame frame = new JFrame("Tower of God");
         frame.add(view);
         frame.setDefaultCloseOperation(3);
@@ -25,7 +25,7 @@ public class Main {
         frame.setResizable(false);
         frame.pack();
         frame.setVisible(true);
-        //JFrame debugView = new DebugViewer(world, 600, 600);
+        JFrame debugView = new DebugViewer(world, 600, 600);
         world.start();
     }
 

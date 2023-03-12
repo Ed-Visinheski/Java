@@ -11,10 +11,12 @@ public class MainWorld extends World {
         Shape shape = new BoxShape(12.5f, 1f);
         StaticBody ground = new StaticBody(this, shape);
         ground.setPosition(new Vec2(0.0f, -12f));
+        ground.addImage(new BodyImage("data/Platforms/LongFloor.png",2f));
 
         Shape platform1Shape = new BoxShape(3, 0.5f);
         StaticBody platform1 = new StaticBody(this, platform1Shape);
         platform1.setPosition(new Vec2(-8, -6f));
+        platform1.addImage(new BodyImage("data/Platforms/treadmill.png",1f));
 
         Points coin = new Points(this);
         coin.setPosition(new Vec2(-8,-5));
@@ -22,9 +24,11 @@ public class MainWorld extends World {
         Shape platform2Shape = new BoxShape(3, 0.5f);
         PlatMove xPlat1 = new PlatMove(this, platform2Shape,new Vec2(1,0),new Vec2(8,0),0.05f,false);
         xPlat1.setPosition(new Vec2(3,0 ));
+        xPlat1.addImage(new BodyImage("data/Platforms/3L-Pipe.png",1.5f));
 
         StaticBody platform3 = new StaticBody(this, platform2Shape);
         platform3.setPosition(new Vec2(3, 6f));
+        platform3.addImage(new BodyImage("data/Platforms/3L-WheelPipe.png",1.5f));
 
         Shape smallBoxShape = new BoxShape(1f,1f);
         StaticBody smallBox = new StaticBody(this,smallBoxShape);
@@ -49,6 +53,7 @@ public class MainWorld extends World {
         Shape longPlatShape = new BoxShape(10f,0.5f);
         StaticBody longPlatform = new StaticBody(this, longPlatShape);
         longPlatform.setPosition(new Vec2(3,25));
+        longPlatform.addImage(new BodyImage("data/Platforms/LongFloor.png",1.8f));
 
 
         player = new Player(this);
